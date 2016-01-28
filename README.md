@@ -14,7 +14,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-##Overview of hbase-archetypes
+#Overview of hbase-archetypes
 The hbase-archetypes subproject of hbase provides an infrastructure for
 creation and maintenance of Maven archetypes<sup id="a1">[1](#f1)</sup>
 pertinent to HBase. Upon deployment to the archetype
@@ -25,7 +25,7 @@ end-user developers to autogenerate completely configured Maven projects
 `archetype:generate` goal of the
 maven-archetype-plugin<sup id="a4">[4](#f4)</sup>.
 
-##Notes for contributors and committers to the HBase project
+#Notes for contributors and committers to the HBase project
 The hbase-archetypes project contains a separate subproject for each archetype.
 The top level components of such a subproject comprise a complete, standalone
 exemplar Maven project containing:
@@ -95,7 +95,7 @@ and can be tested locally by executing the following:
 This displays a numbered list of all locally-installed archetypes for the user
 to choose from for generation of a new Maven project.
 
-##Footnotes:
+#Footnotes:
 <b id="f1">1</b> -- [Maven Archetype
 ](http://maven.apache.org/archetype/index.html) ("About" page).
 -- [↩](#a1)
