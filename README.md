@@ -28,6 +28,8 @@ end-user developers to autogenerate completely configured Maven projects
 maven-archetype-plugin<sup id="a4">[4](#f4)</sup>.
 
 ##Notes for contributors and committers to the HBase project
+
+####The structure of hbase-archetypes
 The hbase-archetypes project contains a separate subproject for each archetype.
 The top level components of such a subproject comprise a complete, standalone
 exemplar Maven project containing:
