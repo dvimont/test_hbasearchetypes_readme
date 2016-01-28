@@ -14,7 +14,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-##Overview of hbase-archetypes
+#hbase-archetypes
+
+##Overview
 The hbase-archetypes subproject of hbase provides an infrastructure for
 creation and maintenance of Maven archetypes<sup id="a1">[1](#f1)</sup>
 pertinent to HBase. Upon deployment to the archetype
