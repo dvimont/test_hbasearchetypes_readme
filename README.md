@@ -53,7 +53,7 @@ During the `mvn install` process, all standalone exemplar projects in the
 the following steps are executed in `hbase-archetypes/hbase-archetype-builder`
 (via the `pom.xml`, bash scripts, and xsl templates in that subdirectory):
 
-1. For each exemplar project, resources are copied (via 
+1. For each exemplar project, resources are copied (via
 maven-resources-plugin) and transformed (via xml-maven-plugin xslt
 functionality) to the exemplar project's `./target/build-archetype`
 subdirectory<sup id="a5">[5](#f5)</sup>.
@@ -66,7 +66,7 @@ project, this creates a corresponding Maven archetype in the
 archetype, due to hard-wired behavior of the
 maven-archetype-plugin<sup id="a6">[6](#f6)</sup>.)
 3. The `pom.xml` file of each newly-created archetype is copied (via
-maven-resources-plugin) and transformed (via xml-maven-plugin xslt 
+maven-resources-plugin) and transformed (via xml-maven-plugin xslt
 functionality)<sup id="a7">[7](#f7)</sup>.
 4. The script `installArchetypes.sh` is executed to install each archetype
 into the local Maven repository, ready for deployment to the central Maven
@@ -119,12 +119,14 @@ to choose from for generation of a new Maven project.
 ](http://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html).
 -- [↩](#a4)
 
-<b id="f5">5</b> -- Prior to archetype creation, each exemplar project's 
+<b id="f5">5</b> -- Prior to archetype creation, each exemplar project's
     `pom.xml` is transformed as follows to make it into a standalone project:
-    resource filtering replaces `${project.version}` with the literal value of
-    the current project.version; and xslt tranformation (a) copies `<groupId>`
-    and `<version>` subelements of `<parent>` to make them child elements of the
-    root element, and (b) removes the `<parent>` and `<description>` elements.
+    RESOURCE FILTERING (a) replaces `${project.version}` with the literal value
+    of the current project.version and (b) replaces `${compileSource}` with the
+    literal value of the version of Java that is being used for compilation;
+    XSLT TRANSFORMATION (a) copies `<groupId>` and `<version>` subelements of
+    `<parent>` to make them child elements of the root element, and (b) removes
+    the `<parent>` and `<description>` elements.
     -- [↩](#a5)
 
 <b id="f6">6</b> -- For an explanation of the platform-encoding warning issued
