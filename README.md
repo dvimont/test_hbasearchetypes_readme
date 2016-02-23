@@ -81,8 +81,9 @@ of the new archetype. (It may be most straightforward to simply copy the `src`
 and `pom.xml` components from one of the existing exemplar projects, replace
 the `src/main` and `src/test` code, and modify the `pom.xml` file's
 `<dependencies>`, `<artifactId>`,` <name>`, and `<description>` elements.)
-2. Modify the `hbase-archetype-builder/pom.xml` file: (a) add the new exemplar
-project to the `<modules>` element, and (b) add appropriate `<execution>`
+2. Modify the `hbase-archetype-builder/pom.xml` file: (a) add a new <*.dir>
+subelement to the <properties> element, with the new exemplar project's
+subdirectory name as its value, and (b) add appropriate `<execution>`
 elements and `<transformationSet>` elements within the `<plugin>` elements
 (using the existing entries from already-existing exemplar projects as a guide).
 3. Add appropriate entries for the new exemplar project to the
