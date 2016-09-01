@@ -17,7 +17,7 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-#hbase-archetypes ![tesseract](http://dvimont.github.io/ColumnManagerForHBase/org/commonvox/hbase_column_manager/doc-files/Tesseract_64pixels.jpg "tesseract")
+#hbase-archetypes
 
 ##Overview
 The hbase-archetypes subproject of hbase provides an infrastructure for
